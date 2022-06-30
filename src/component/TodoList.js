@@ -1,12 +1,9 @@
 import React from 'react'
-import "./TodoList.css";
 
 function TodoList() {
-    return (
-        <div >
-            <p>"hello world"</p>
-        </div>
-    )
+  return (
+    <div>TodoList</div>
+  )
 }
 
 export default TodoList
