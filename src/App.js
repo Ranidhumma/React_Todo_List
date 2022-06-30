@@ -42,15 +42,15 @@ function App(props) {
       <h2 id="list-heading">
         3 tasks remaining
       </h2>
-     
+
       <ul
         role="list"
         className="todo-list stack-large stack-exception"
         aria-labelledby="list-heading">
 
-        <TodoList name="Eat" completed={true} />
-        <TodoList name="Sleep" completed={false} />
-        <TodoList name="Repeat" completed={false} />
+        <TodoList name="Eat" completed={true} id="todo-0" />
+        <TodoList name="Sleep" completed={false} id="todo-1" />
+        <TodoList name="Repeat" completed={false} id="todo-2" />
 
 
       </ul>
