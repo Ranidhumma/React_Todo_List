@@ -71,12 +71,15 @@ function App(props) {
             </label>
           </div>
           <div className="btn-group">
+            
             <button type="button" className="btn">
               Edit <span className="visually-hidden">Sleep</span>
             </button>
+
             <button type="button" className="btn btn__danger">
               Delete <span className="visually-hidden">Sleep</span>
             </button>
+
           </div>
         </li>
         <li className="todo stack-small">
