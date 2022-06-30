@@ -1,9 +1,27 @@
 import React from 'react'
 
-function TodoList() {
-  return (
-    <div>TodoList</div>
-  )
+
+
+export default function TodoList() {
+    return (
+        <TodoList className="todo stack-small">
+            <div className="c-cb">
+                <input id="todo-0" type="checkbox" defaultChecked={true} />
+                <label className="todo-label" htmlFor="todo-0">
+                    Eat
+                </label>
+            </div>
+            <div className="btn-group">
+                <button type="button" className="btn">
+                    Edit <span className="visually-hidden">Eat</span>
+                </button>
+                <button type="button" className="btn btn__danger">
+                    Delete <span className="visually-hidden">Eat</span>
+                </button>
+            </div>
+        </TodoList>
+
+
+    );
 }
 
-export default TodoList
