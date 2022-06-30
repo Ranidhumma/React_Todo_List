@@ -2,6 +2,14 @@ import './App.css';
 import TodoList from './component/TodoList';
 
 function App(props) {
+
+  // const taskList = props.tasks.map(task => (
+  //   <TodoList id={task.id} name={task.name} completed={task.completed} />
+  // ));
+
+  const taskList = props.tasks?.map(task => task.name);
+   
+
   return (
     <div className="todoapp stack-large">
       <h1>TodoMatic</h1>
@@ -48,9 +56,7 @@ function App(props) {
         className="todo-list stack-large stack-exception"
         aria-labelledby="list-heading">
 
-        <TodoList name="Eat" completed={true} id="todo-0" />
-        <TodoList name="Sleep" completed={false} id="todo-1" />
-        <TodoList name="Repeat" completed={false} id="todo-2" />
+        {taskList}
 
 
       </ul>
