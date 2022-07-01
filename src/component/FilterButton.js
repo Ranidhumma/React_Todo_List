@@ -1,5 +1,6 @@
 import React from "react";
-  const FilterButton = (props) => {
+
+function FilterButton(props) {
   return (
     <button
       type="button"
@@ -12,6 +13,6 @@ import React from "react";
       <span className="visually-hidden"> tasks</span>
     </button>
   );
-};
+}
 
 export default FilterButton;
